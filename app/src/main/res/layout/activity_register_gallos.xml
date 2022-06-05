@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sis.ui.view.activities.RegisterGallosActivity"
+    android:background="@color/white">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10sp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/label_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="15sp"
+                        android:text="Registro"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/camera_btn"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_camera_alt_24"
+                        app:tint="@color/grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="3dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:src="@drawable/ic_android"
+                            app:tint="@color/grey" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Linea"
+                            android:textColorHint="@color/white">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/liena_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="3dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:src="@drawable/ic_android"
+                            app:tint="@color/grey" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Año"
+                            android:textColorHint="@color/white">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/year_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="3dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:src="@drawable/ic_android"
+                            app:tint="@color/grey" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/placa_field"
+                            style="@style/TextLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="No. de placa"
+                            android:textColorHint="@color/white">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/placa_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="3dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:src="@drawable/ic_android"
+                            app:tint="@color/grey" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/TextLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="No. de anillo"
+                            android:textColorHint="@color/white">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ring_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10sp"
+                        android:text="Marcas"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Izquierda"
+                                android:textColor="@color/black" />
+
+                            <Spinner
+                                android:id="@+id/sp_pata_izquierda"
+                                android:layout_width="match_parent"
+                                android:layout_height="65sp"
+                                android:background="@color/background_body"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Derecha"
+                                android:textColor="@color/black" />
+
+                            <Spinner
+                                android:id="@+id/sp_pata_derecha"
+                                android:layout_width="match_parent"
+                                android:layout_height="65sp"
+                                android:background="@color/background_body"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nariz"
+                                android:textColor="@color/black" />
+
+                            <Spinner
+                                android:id="@+id/sp_nariz"
+                                android:layout_width="match_parent"
+                                android:layout_height="65sp"
+                                android:background="@color/background_body"
+                                android:gravity="center" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Genero"
+                                android:textColor="@color/black" />
+
+                            <Spinner
+                                android:id="@+id/sp_genero"
+                                android:layout_width="match_parent"
+                                android:layout_height="65sp"
+                                android:layout_gravity="center"
+                                android:background="@color/background_body"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/guardar_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15sp"
+                        android:text="Guardar" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
